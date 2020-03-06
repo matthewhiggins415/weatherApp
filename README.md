@@ -1,35 +1,17 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# React Challenge
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Let's build an application for a client in React!
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+-   [react-crud](https://git.generalassemb.ly/ga-wdi-boston/react-crud)
 
 ## Objectives
 
-By the end of this, developers should be able to:
-
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+- Build a React application to design specifications
+- Utilize a 3rd part API with React
 
 ## Preparation
 
@@ -39,68 +21,41 @@ By the end of this, developers should be able to:
 1.  Checkout to the `training` branch.
 1.  Install dependencies with `npm install`.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Weather Application
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+![weather](https://media.git.generalassemb.ly/user/3667/files/18bfc380-06fb-11ea-9a42-49fd24f00e7f)
 
-## Leading Topic Heading
+### Part One: Front-End Design
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+Use the mockup in the bottom section to create a front-end application using React.  This should be as pixel-perfect as possible. This include colors, fonts, and whitespace. Ensure your app is responsive for all screen sizes.
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+_Do not include any JavaScript functionality._
 
-## Demo: Write a Demo
+Once the above is complete, deploy your application to GH-Pages and slack your instructor with a link to the repo and the live site for a code review.
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+### Part Two: Connect With API
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+Allow your form to be submitted, and send the location in a request to OpenWeatherMap API.  You can read more about that here https://openweathermap.org/api.
 
-## Code-Along: Write an Code-Along
+Once the form is submitted, use the API response to display actual weather data for the location submitted in the form.
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+Once the above is complete, make sure your deployed application works the same and email your live application URL to the instructional team.
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+### Part Three: Add a Back End API
 
-## Lab: Write a Lab
+Launch express API.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+Add a HomeTown property to a user that can be a string like "Boston, MA"
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+Test that a user can sign up, sign in, change password, sign out, and update their HomeTown.
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+### Part Four: Add Auth and HomeTown to React App
 
-## Additional Resources
+Update react app so when a user signs up they include their HomeTown.
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+Update react app so user has to log in to access the weather functionality.
+
+Update react app so when user logs in, they see their hometown's data by default.
 
 ## [License](LICENSE)
 
