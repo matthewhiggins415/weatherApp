@@ -41,21 +41,6 @@ Once the form is submitted, use the API response to display actual weather data 
 
 Once the above is complete, make sure your deployed application works the same and email your live application URL to the instructional team.
 
-### Part Three: Add a Back End API
-
-Launch express API.
-
-Add a HomeTown property to a user that can be a string like "Boston, MA"
-
-Test that a user can sign up, sign in, change password, sign out, and update their HomeTown.
-
-### Part Four: Add Auth and HomeTown to React App
-
-Update react app so when a user signs up they include their HomeTown.
-
-Update react app so user has to log in to access the weather functionality.
-
-Update react app so when user logs in, they see their hometown's data by default.
 
 ## [License](LICENSE)
 
