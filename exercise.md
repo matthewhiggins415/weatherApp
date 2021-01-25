@@ -14,4 +14,8 @@ Use the mockup in the bottom section to create a front-end application using Rea
 
 _Do not include any JavaScript functionality._
 
-Once the above is complete, deploy your application to GH-Pages and slack your instructor with a link to the repo and the live site for a code review.
+### Bonus: Make Requests to Weather API
+
+Allow your form to be submitted, and send the location in a request to https://openweathermap.org/api
+
+Once the form is submitted, use the API response to display actual weather data for the location submitted in the form. 
